@@ -1,7 +1,84 @@
 /* one-shot template theme — adapted from electric-sql.com.
    Light: deep navy ink on warm-stone bg.
-   Dark: cyan accent on near-black bg.
-   Font @font-face declarations land here in Task 5. */
+   Dark: cyan accent on near-black bg. */
+
+@font-face {
+  font-family: 'OpenSauceOne';
+  src: url('/fonts/OpenSauceOne-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'OpenSauceOne';
+  src: url('/fonts/OpenSauceOne-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'OpenSauceOne';
+  src: url('/fonts/OpenSauceOne-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'OpenSauceOne';
+  src: url('/fonts/OpenSauceOne-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'OpenSauceOne';
+  src: url('/fonts/OpenSauceOne-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'OpenSauceOne';
+  src: url('/fonts/OpenSauceOne-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'OpenSauceOne';
+  src: url('/fonts/OpenSauceOne-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'OpenSauceOne';
+  src: url('/fonts/OpenSauceOne-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'OpenSauceOne';
+  src: url('/fonts/OpenSauceOne-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'OpenSauceOne';
+  src: url('/fonts/OpenSauceOne-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SourceCodePro';
+  src: url('/fonts/SourceCodePro-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   /* Brand */

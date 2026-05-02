@@ -1,5 +1,9 @@
 import { HeadContent, Scripts, createRootRoute } from "@tanstack/react-router"
+import { Theme } from "@radix-ui/themes"
+import "@radix-ui/themes/styles.css"
 import appCss from "../styles.css?url"
+import { useDarkMode } from "../hooks/useDarkMode"
+import { Toaster } from "../components/Toaster"
 
 export const Route = createRootRoute({
   head: () => ({
@@ -13,13 +17,22 @@ export const Route = createRootRoute({
 })
 
 function RootDocument({ children }: { children: React.ReactNode }) {
+  const { dark } = useDarkMode()
   return (
     <html lang="en">
       <head>
         <HeadContent />
       </head>
-      <body className="min-h-screen bg-background text-foreground antialiased">
-        {children}
+      <body>
+        <Theme
+          appearance={dark ? "dark" : "light"}
+          grayColor="slate"
+          radius="medium"
+          panelBackground="solid"
+        >
+          {children}
+          <Toaster />
+        </Theme>
         <Scripts />
       </body>
     </html>

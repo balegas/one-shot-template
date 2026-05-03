@@ -45,7 +45,10 @@
     "postgres": "^3.4",
     "zod": "^3.25",
     "@tanstack/start-client-core": "*",
-    "@durable-streams/client": "^0.2"
+    "@durable-streams/aisdk-transport": "^0.0.3",
+    "@durable-streams/client": "^0.2",
+    "@durable-streams/tanstack-ai-transport": "^0.0.4",
+    "@durable-streams/y-durable-streams": "^0.2.4"
   },
   "devDependencies": {
     "@tanstack/devtools-vite": "^0.6.0",

@@ -17,18 +17,23 @@ libraries correctly.
 | electric-shapes | @electric-sql/client | electric/packages/typescript-client/skills/electric-shapes |
 | electric-yjs | @electric-sql/y-electric | electric/packages/y-electric/skills/electric-yjs |
 
-## Auto-update path
+## Auto-installed via `intent install` postinstall
 
-The template's `package.json` runs `intent install --no-prompt || true`
-on `postinstall`. When upstream packages start including `skills/` in
-their published tarballs (via the `files` field in their `package.json`),
-those skills will start flowing in automatically — overriding (or sitting
-beside) these vendored copies. At that point, this README + the vendored
-copies should be removed in favor of the auto-installed versions.
+These skills come from packages that ship `skills/` in their published
+npm tarballs. They land in `.claude/skills/` automatically on every
+`pnpm install`.
 
-## Skills NOT vendored (no upstream skills exist yet)
+| Skill | Source package |
+|-------|----------------|
+| tanstack-ai | @durable-streams/tanstack-ai-transport |
+| vercel-ai-sdk | @durable-streams/aisdk-transport |
+| yjs-editors | @durable-streams/y-durable-streams |
+| yjs-getting-started | @durable-streams/y-durable-streams |
+| yjs-server | @durable-streams/y-durable-streams |
+| yjs-sync | @durable-streams/y-durable-streams |
+
+## Skills NOT auto-installed (no upstream skills exist yet)
 
 - `@durable-streams/client` — no `skills/` directory in source
-- `@tanstack/db` / `@tanstack/electric-db-collection` — no `skills/` in source
-- AI durable transport — package not yet identified
-- (Future) Durable Streams Yjs provider — separate from y-electric, not yet authored
+- `@tanstack/db` — no `skills/` in source
+- `drizzle-orm` — no `skills/` in source
